@@ -2,14 +2,14 @@ import { MouseEventHandler } from 'react';
 import FavoriteIcon from '@mui/icons-material/Favorite'; 
 import { IconButton} from '@mui/material';
 //Declaro la interface del componente.
-export interface CustomButtonProps {
+export interface Myfavouriteprops {
     color: 'primary' | 'secondary' | 'action' | 'error' | 'disabled';
     disabled?: boolean; //prop disabled. Es opcional y es de tipo boolean
     onClick?: MouseEventHandler<HTMLButtonElement>; //prop onClick opcional y responde al
     //evento de picar el botón
 }
 //Defino mi componente CustomButton y le digo que las props son las que definí arriba
-function Myfavourite(props: CustomButtonProps) {
+function Myfavourite(props: Myfavouriteprops) {
     //Paso el valor de las props a un objeto:
     const { disabled, onClick, color } = props
     return (
