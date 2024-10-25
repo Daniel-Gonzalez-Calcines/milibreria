@@ -1,5 +1,5 @@
-export * from './button';
-export * from './mybutton';
-export * from './Myfavourite';
-export * from './MyfavouriteBorder';
-export * from './DanielGC'
+export { CustomButton } from './button';
+export { Mybutton } from './mybutton';
+export { Myfavourite } from './Myfavourite';
+export { Myfavouriteborder } from './MyfavouriteBorder';
+export { DanielGC } from './DanielGC'
