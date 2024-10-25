@@ -1,0 +1,56 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./example.tsx";
+import * as CustomDanielGC from "./DanielGC.stories.tsx";
+
+<Meta of={CustomDanielGC} title="CustomDanielGC" />
+
+# CustomDanielGC
+
+Componente de botón con diferentes especializaciones.
+
+#### Example
+
+<Canvas of={CustomDanielGC.Primary} />
+
+## Usage
+
+```ts
+import {CustomDanielGC} from 'milibreria';
+
+function Example(){
+    return (
+        <CustomDanielGC
+            text: "DanielGC primary",
+            txtcolor: 'black',
+            bgcolor: 'red',
+            disabled: false,
+            size: "small",
+            onClick: () => alert("DanielGC Primary"),
+        />
+    );
+};
+
+export default Example;
+```
+
+#### Example
+
+<Canvas of={CustomDanielGC.Secondary} />
+
+## Usage
+
+```ts
+import {CustomDanielGC} from 'milibreria';
+
+function Example(){
+    return (
+        <CustomDanielGC
+            text: "DanielGC secondary",
+            txtcolor: 'white',
+            bgcolor: 'pink',
+            disabled: false,
+            size: "small",
+            onClick: () => alert("DanielGC Secondary"),
+        />
+    );
+};
